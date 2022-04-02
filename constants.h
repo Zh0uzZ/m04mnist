@@ -1,0 +1,13 @@
+#ifndef CONSTANTS_H
+#define CONSTANTS_H
+
+// AHB address map
+#define AHB_UART_BASE 0x53000000
+#define AHB_TIMER_BASE 0x52000000
+#define AHB_TIMER_CONT 0x52000008
+
+// uart
+#define UART_TX_ADDR AHB_UART_BASE
+#define UART_RX_ADDR AHB_UART_BASE | 0x00000001
+
+#endif

@@ -5,6 +5,7 @@ unsigned char en = 0;
 unsigned int count = 0;
 unsigned int uart_data;
 unsigned int data[10];
+
 void Btn_ISR() { i = 0; }
 
 void Timer_ISR() {
@@ -48,8 +49,8 @@ int main(void) {
     ////		*(unsigned char*) AHB_LED_BASE = i;
     //			i=i+1;
     ////	   if (i==100)
-    ////				*(unsigned int*) AHB_TIMER_CONT= 0;	//Stop timer if
-    ///counter reaches
+    ////				*(unsigned int*) AHB_TIMER_CONT= 0;
+    /////Stop timer if counter reaches
     /// 9
     //	 }
     *(unsigned int *)AHB_LED_BASE = count;
